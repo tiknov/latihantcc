@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+        webweb:
+                build: .
+                ports: 
+                - "3000:80"
+                volumes:
+                - ./website:/usr/share/nginx/html
